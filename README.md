@@ -13,9 +13,9 @@ developing environment configuration
 1. sudo apt-get install terminator
 2. 使用 solarized 配色
     mkdir -p ~/.config/terminator/
-    curl https://raw.githubusercontent.com/xixi10111011/dev_conf/master/config > ~/.config/terminator/config
+    curl https://raw.githubusercontent.com/xixi10111011/dev_conf/master/terminator/config > ~/.config/terminator/config
 3. 配置dircolor
-    curl https://raw.githubusercontent.com/xixi10111011/dev_conf/master/dircolors > ~/.dircolors
+    curl https://raw.githubusercontent.com/xixi10111011/dev_conf/master/terminator/dircolors > ~/.dircolors
 4. 配置bashrc
-    https://raw.githubusercontent.com/xixi10111011/dev_conf/master/bashrc
+   https://raw.githubusercontent.com/xixi10111011/dev_conf/master/terminator/bashrc
    \# enable color support of ls and also add handy aliases 
