@@ -1,3 +1,5 @@
+" vundle conf start
+" don't need to keep compatibility with Vi.
 set nocompatible
 filetype off 
 
@@ -10,8 +12,65 @@ Plugin 'scrooloose/nerdtree'
 
 call vundle#end() 
 filetype plugin indent on 
+" vundle conf end
 
+" Turn on syntax highlighting
+syntax on
+
+" Turn on the ruler           
+set ruler 
+
+" show status of commands in status bar
+set showcmd                              
+
+" show current mode in the status bar.
+set showmode 
+
+" Don't wrap text to the next line.
+set nowrap                               
+
+" Show a ruler at 80 columns
+set colorcolumn=80  
+
+" Show line numbers                     
+set number      
+
+" allow opening multiple files without saving changes first
+set hidden
+
+" Allow mouse for selecting stuff (training wheels)
+set mouse=a
+
+" set show matching parenthesis
+set showmatch  
+
+" Configure the tab key to use four spaces.
+set tabstop=4                            
+set expandtab                            
+set shiftwidth=4
+
+" Allow backspacing like a normal editor in insert mode.
+set backspace=indent,eol,start
+
+" when at 3 spaces, and I hit > ... go to 4, not 5
+set shiftround  
+
+" find the next match as we type the search
+set incsearch    
+
+" highlight searches by default                        
+set hlsearch  
+
+" ignore case when searching                          
+set ignorecase   
+
+" unless they have one capital letter
+set smartcase
+
+" Use the F5 key to toggle the highlighted word
+map <F5> :set hls!<bar>set hls?<CR>
+
+" remap leader to ',' which is much easier than '\'
 let mapleader = ","
-let g:mapleader = ","
 
 map <leader>e :NERDTreeToggle<CR>
