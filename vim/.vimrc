@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end() 
 filetype plugin indent on 
@@ -73,4 +74,14 @@ map <F5> :set hls!<bar>set hls?<CR>
 " remap leader to ',' which is much easier than '\'
 let mapleader = ","
 
+" open NerdTree
 map <leader>e :NERDTreeToggle<CR>
+
+" Make line numbers show up
+let NERDTreeShowLineNumbers=1
+
+" Exclude files from ctrl-p finder
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
+" Use ,f instead.
+map <leader>f :CtrlP<CR>
