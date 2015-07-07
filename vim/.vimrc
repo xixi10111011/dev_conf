@@ -86,8 +86,8 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 " Use ,f instead.
 map <leader>f :CtrlP<CR>
 
-“
+"
 nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR> 
 
-”
+"
 nnoremap <leader>je :YcmCompleter GoToDefinition<CR>  
