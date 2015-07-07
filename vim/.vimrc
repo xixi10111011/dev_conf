@@ -10,6 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'Mizuchi/STL-Syntax'
 
 call vundle#end() 
 filetype plugin indent on 
@@ -91,3 +93,6 @@ nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
 
 "
 nnoremap <leader>je :YcmCompleter GoToDefinition<CR>  
+
+" set status bar
+let g:Powerline_colorscheme = 'solarized16' 
