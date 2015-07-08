@@ -154,3 +154,18 @@ let g:tagbar_type_cpp = {
 
 "
 nnoremap <Leader>sp :CtrlSF<CR>
+
+" 
+let NERDTreeWinSize=32
+
+" 
+let NERDTreeWinPos="right"
+
+" 
+let NERDTreeShowHidden=1
+
+" 
+let NERDTreeMinimalUI=1
+
+" 
+let NERDTreeAutoDeleteBuffer=1
